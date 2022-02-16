@@ -5,9 +5,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 2rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.card{
+  align-content: center;
+  border: 1px solid grey;
+  border-radius: 6px;
+  min-width: 300px;
+
+}
+
+.card p {
+  padding: 5px;
+  text-align: center;
+}
+
+.card img {
+  display: block;
+  max-width: inherit;
+  max-height: 100px;
+  margin: 0 auto;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
